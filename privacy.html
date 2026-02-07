@@ -1,68 +1,144 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="zh-HK">
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>私隱政策（Privacy Policy）｜[[AppName]]</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang HK", "Noto Sans TC", Arial, sans-serif; margin:0; line-height:1.65; }
+    header { padding: 28px 16px; border-bottom: 1px solid rgba(0,0,0,.08); }
+    main { max-width: 920px; margin: 0 auto; padding: 20px 16px 40px; }
+    h1 { margin: 0 0 6px; font-size: 26px; }
+    .meta { opacity:.75; font-size: 14px; }
+    h2 { margin-top: 28px; font-size: 18px; }
+    ul { padding-left: 20px; }
+    .card { border: 1px solid rgba(0,0,0,.08); border-radius: 14px; padding: 14px; background: rgba(127,127,127,.06); }
+    a { color: inherit; }
+    table { width:100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { border: 1px solid rgba(0,0,0,.12); padding: 10px; vertical-align: top; }
+    th { text-align:left; }
+    .note { opacity:.8; font-size: 14px; }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>私隱政策（Privacy Policy）</h1>
+    <div class="meta">[[AppName]]｜最後更新：[[YYYY-MM-DD]]</div>
+  </header>
 
-<h1>Privacy Policy</h1>
+  <main>
+    <div class="card">
+      <p>
+        本私隱政策說明 <strong>[[CompanyName/DeveloperName]]</strong>（下稱「我們」）在你使用 <strong>[[AppName]]</strong>（下稱「本 App」）時，
+        如何收集、使用、儲存及披露資料。你使用本 App，即表示你已閱讀並理解本政策。
+      </p>
+      <p class="note">
+        注意：你 App Store Connect「App 私隱」(Privacy Nutrition Label) 的披露內容必須同本政策一致；唔一致係常見被審核挑機位。
+      </p>
+    </div>
 
-<p>
-This Privacy Policy describes how the AlgoPro mobile application ("the App") handles information.
-</p>
+    <h2>1. 我們收集的資料</h2>
+    <p>我們可能會收集以下類型的資料（視乎你實際使用功能及設定）：</p>
+    <table>
+      <thead>
+        <tr>
+          <th>資料類型</th>
+          <th>例子</th>
+          <th>用途</th>
+          <th>是否必需</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>訂閱狀態</td>
+          <td>已訂閱／試用／到期狀態（由 Apple/StoreKit 提供）</td>
+          <td>解鎖功能、驗證訂閱</td>
+          <td>如使用訂閱功能：必需</td>
+        </tr>
+        <tr>
+          <td>你輸入的數據（本機）</td>
+          <td>年齡、金額、假設參數、計算結果</td>
+          <td>提供計算與顯示結果</td>
+          <td>功能所需</td>
+        </tr>
+        <tr>
+          <td>分析數據（如啟用）</td>
+          <td>使用次數、功能點擊、崩潰記錄</td>
+          <td>改善 App 穩定性與體驗</td>
+          <td>可選（視乎你是否用 Analytics/Crash 工具）</td>
+        </tr>
+        <tr>
+          <td>聯絡資料（如你主動提供）</td>
+          <td>電郵、訊息內容</td>
+          <td>客服支援、回覆查詢</td>
+          <td>可選</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">你需要將上表按你實際情況刪改（例如你冇 analytics，就應該刪走嗰行）。</p>
 
-<h2>Information Collection</h2>
+    <h2>2. 我們如何使用資料</h2>
+    <ul>
+      <li>提供、維持及改善本 App 功能（包括訂閱解鎖及驗證）。</li>
+      <li>處理你的支援請求及回覆查詢。</li>
+      <li>進行統計分析、除錯及改善穩定性（如有使用分析/崩潰工具）。</li>
+      <li>遵守法律或回應監管要求（如適用）。</li>
+    </ul>
 
-<p>
-The App does not collect, store, transmit, or share any personal data.
-All calculations, inputs, and results are processed locally on the user’s device.
-</p>
+    <h2>3. 資料分享與第三方</h2>
+    <p>
+      我們一般不會出售你的個人資料。以下情況可能會與第三方分享資料：
+    </p>
+    <ul>
+      <li><strong>Apple / App Store / StoreKit：</strong>用以處理付款、訂閱及驗證（我們通常只會收到訂閱狀態或交易相關資料）。</li>
+      <li><strong>分析/崩潰服務（如適用）：</strong>例如 [[Firebase/Crashlytics/RevenueCat/其他]]，用以統計及除錯。</li>
+      <li><strong>法律要求：</strong>如法律或執法機構要求披露。</li>
+    </ul>
+    <p class="note">
+      如果你用 RevenueCat / Firebase / 任何 SDK，最好喺呢度列清楚，並確保 App Privacy Label 同步更新。
+    </p>
 
-<h2>Personal Data</h2>
+    <h2>4. 資料儲存位置與保留期限</h2>
+    <ul>
+      <li>如你的計算資料只儲存在裝置本機（例如 iCloud 未開、冇上傳 server），請清楚寫明「本機儲存」。</li>
+      <li>如有雲端／自建伺服器／第三方儲存，請寫明儲存位置、保留期限及刪除方式。</li>
+      <li>一般而言，我們只會在達成用途所需的期間內保留資料，或按法律要求保留。</li>
+    </ul>
 
-<p>
-The App does not require user registration and does not collect personally identifiable information,
-including but not limited to name, email address, phone number, location data, or financial account details.
-</p>
+    <h2>5. 你的權利與選擇</h2>
+    <ul>
+      <li>你可於裝置設定中限制某些權限（如有）。</li>
+      <li>你可以要求查閱、更正或刪除你提供給我們的資料（如適用）。</li>
+      <li>如你希望刪除資料或查詢私隱事宜，可電郵我們：<a href="mailto:[[SupportEmail]]">[[SupportEmail]]</a></li>
+    </ul>
 
-<h2>Third-Party Services</h2>
+    <h2>6. 兒童私隱</h2>
+    <p>
+      本 App 並非以兒童為主要對象。若你相信未成年人在未獲監護人同意下向我們提供資料，請聯絡我們。
+    </p>
 
-<p>
-The App does not integrate with third-party analytics tools, advertising networks,
-or external data collection services.
-</p>
+    <h2>7. 安全措施</h2>
+    <p>
+      我們會採取合理措施保護資料安全（例如存取控制、傳輸保護等）。但任何系統都無法保證 100% 安全。
+    </p>
 
-<h2>Data Storage</h2>
+    <h2>8. 政策更新</h2>
+    <p>
+      我們可能不時更新本政策。更新後會於本頁反映「最後更新」日期。你繼續使用本 App，即視為接受更新內容。
+    </p>
 
-<p>
-Any data entered into the App is stored locally on the user’s device and remains fully under the user’s control.
-The developer does not have access to this data.
-</p>
+    <h2>9. 聯絡我們</h2>
+    <p>
+      如對本私隱政策有任何查詢：<br>
+      電郵：<a href="mailto:[[SupportEmail]]">[[SupportEmail]]</a><br>
+      開發者／公司：[[CompanyName/DeveloperName]]<br>
+      所在地：[[City, Country/Region]]（可選）
+    </p>
+  </main>
 
-<h2>Children’s Privacy</h2>
-
-<p>
-The App does not knowingly collect any personal information from children under the age of 13.
-</p>
-
-<h2>Changes to This Policy</h2>
-
-<p>
-This Privacy Policy may be updated from time to time.
-Any changes will be reflected on this page.
-</p>
-
-<h2>Contact</h2>
-
-<p>
-If you have any questions regarding this Privacy Policy, please contact the developer through the App Store.
-</p>
-
-<p>
-Last updated: February 2026
-</p>
-
+  <footer style="padding: 18px 16px; border-top: 1px solid rgba(0,0,0,.08); opacity:.75; font-size: 13px;">
+    © [[YYYY]] [[CompanyName/DeveloperName]]. All rights reserved.
+  </footer>
 </body>
 </html>
