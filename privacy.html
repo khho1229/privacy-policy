@@ -3,124 +3,114 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>私隱政策（Privacy Policy）｜[[AppName]]</title>
+  <title>私隱政策（Privacy Policy）｜AlgoPro</title>
   <style>
     :root { color-scheme: light dark; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang HK", "Noto Sans TC", Arial, sans-serif; margin:0; line-height:1.65; }
-    header { padding: 28px 16px; border-bottom: 1px solid rgba(0,0,0,.08); }
-    main { max-width: 920px; margin: 0 auto; padding: 20px 16px 40px; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang HK", "Noto Sans TC", Arial, sans-serif; margin:0; line-height:1.7; }
+    header { padding: 28px 16px; border-bottom: 1px solid rgba(127,127,127,.22); }
+    main { max-width: 920px; margin: 0 auto; padding: 20px 16px 44px; }
     h1 { margin: 0 0 6px; font-size: 26px; }
-    .meta { opacity:.75; font-size: 14px; }
-    h2 { margin-top: 28px; font-size: 18px; }
+    .meta { opacity:.78; font-size: 14px; }
+    h2 { margin-top: 26px; font-size: 18px; }
     ul { padding-left: 20px; }
-    .card { border: 1px solid rgba(0,0,0,.08); border-radius: 14px; padding: 14px; background: rgba(127,127,127,.06); }
-    a { color: inherit; }
+    a { text-decoration: underline; color: inherit; }
+    .card { border: 1px solid rgba(127,127,127,.28); border-radius: 14px; padding: 14px; background: rgba(127,127,127,.08); }
     table { width:100%; border-collapse: collapse; margin-top: 10px; }
-    th, td { border: 1px solid rgba(0,0,0,.12); padding: 10px; vertical-align: top; }
+    th, td { border: 1px solid rgba(127,127,127,.28); padding: 10px; vertical-align: top; }
     th { text-align:left; }
-    .note { opacity:.8; font-size: 14px; }
+    .note { opacity:.82; font-size: 14px; }
+    footer { padding: 18px 16px; border-top: 1px solid rgba(127,127,127,.22); opacity:.78; font-size: 13px; }
   </style>
 </head>
 <body>
   <header>
     <h1>私隱政策（Privacy Policy）</h1>
-    <div class="meta">[[AppName]]｜最後更新：[[YYYY-MM-DD]]</div>
+    <div class="meta">AlgoPro｜最後更新：2026-02-07</div>
   </header>
 
   <main>
     <div class="card">
       <p>
-        本私隱政策說明 <strong>[[CompanyName/DeveloperName]]</strong>（下稱「我們」）在你使用 <strong>[[AppName]]</strong>（下稱「本 App」）時，
-        如何收集、使用、儲存及披露資料。你使用本 App，即表示你已閱讀並理解本政策。
+        本私隱政策說明本 App 之開發者在你使用 <strong>AlgoPro</strong>（下稱「本 App」）時，
+        會如何處理資料，以及你可以如何作出選擇。
       </p>
       <p class="note">
-        注意：你 App Store Connect「App 私隱」(Privacy Nutrition Label) 的披露內容必須同本政策一致；唔一致係常見被審核挑機位。
+        本政策內容旨在與 App Store Connect 的「App 私隱」披露保持一致；如未來本 App 的資料處理方式有所變更，我們會更新本政策。
       </p>
     </div>
 
     <h2>1. 我們收集的資料</h2>
-    <p>我們可能會收集以下類型的資料（視乎你實際使用功能及設定）：</p>
+    <p>本 App 主要在裝置上進行計算與顯示結果。一般情況下，我們會處理的資料類型如下：</p>
+
     <table>
       <thead>
         <tr>
           <th>資料類型</th>
           <th>例子</th>
           <th>用途</th>
-          <th>是否必需</th>
+          <th>備註</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>訂閱狀態</td>
-          <td>已訂閱／試用／到期狀態（由 Apple/StoreKit 提供）</td>
-          <td>解鎖功能、驗證訂閱</td>
-          <td>如使用訂閱功能：必需</td>
-        </tr>
-        <tr>
-          <td>你輸入的數據（本機）</td>
+          <td>你輸入的計算資料（本機）</td>
           <td>年齡、金額、假設參數、計算結果</td>
-          <td>提供計算與顯示結果</td>
-          <td>功能所需</td>
+          <td>在裝置上運算並顯示結果</td>
+          <td>預設只儲存在你的裝置內</td>
         </tr>
         <tr>
-          <td>分析數據（如啟用）</td>
-          <td>使用次數、功能點擊、崩潰記錄</td>
-          <td>改善 App 穩定性與體驗</td>
-          <td>可選（視乎你是否用 Analytics/Crash 工具）</td>
+          <td>訂閱狀態（由 Apple 提供）</td>
+          <td>已訂閱／試用／到期（StoreKit/Apple IAP）</td>
+          <td>解鎖功能、驗證訂閱權益</td>
+          <td>交易與訂閱由 Apple 處理</td>
         </tr>
         <tr>
-          <td>聯絡資料（如你主動提供）</td>
-          <td>電郵、訊息內容</td>
+          <td>你主動提供的聯絡資料（如有）</td>
+          <td>電郵內容、你描述的問題與截圖</td>
           <td>客服支援、回覆查詢</td>
-          <td>可選</td>
+          <td>只會在你主動聯絡我們時出現</td>
         </tr>
       </tbody>
     </table>
-    <p class="note">你需要將上表按你實際情況刪改（例如你冇 analytics，就應該刪走嗰行）。</p>
 
     <h2>2. 我們如何使用資料</h2>
     <ul>
-      <li>提供、維持及改善本 App 功能（包括訂閱解鎖及驗證）。</li>
-      <li>處理你的支援請求及回覆查詢。</li>
-      <li>進行統計分析、除錯及改善穩定性（如有使用分析/崩潰工具）。</li>
-      <li>遵守法律或回應監管要求（如適用）。</li>
+      <li>在你的裝置上運算你輸入的資料並生成結果。</li>
+      <li>驗證你的訂閱權益並解鎖相應功能（透過 Apple 的 App 內購買機制）。</li>
+      <li>如你主動聯絡我們，使用你提供的資料用作客服支援。</li>
+      <li>在法律要求下，作必要披露或合規處理（如適用）。</li>
     </ul>
 
     <h2>3. 資料分享與第三方</h2>
-    <p>
-      我們一般不會出售你的個人資料。以下情況可能會與第三方分享資料：
-    </p>
     <ul>
-      <li><strong>Apple / App Store / StoreKit：</strong>用以處理付款、訂閱及驗證（我們通常只會收到訂閱狀態或交易相關資料）。</li>
-      <li><strong>分析/崩潰服務（如適用）：</strong>例如 [[Firebase/Crashlytics/RevenueCat/其他]]，用以統計及除錯。</li>
-      <li><strong>法律要求：</strong>如法律或執法機構要求披露。</li>
+      <li><strong>Apple（App Store / StoreKit）：</strong>用以處理付款、訂閱及權益驗證。</li>
+      <li><strong>本 App 不使用任何第三方分析、廣告、追蹤或崩潰追蹤 SDK。</strong></li>
+      <li>我們不會出售你的個人資料。</li>
     </ul>
-    <p class="note">
-      如果你用 RevenueCat / Firebase / 任何 SDK，最好喺呢度列清楚，並確保 App Privacy Label 同步更新。
-    </p>
 
     <h2>4. 資料儲存位置與保留期限</h2>
     <ul>
-      <li>如你的計算資料只儲存在裝置本機（例如 iCloud 未開、冇上傳 server），請清楚寫明「本機儲存」。</li>
-      <li>如有雲端／自建伺服器／第三方儲存，請寫明儲存位置、保留期限及刪除方式。</li>
-      <li>一般而言，我們只會在達成用途所需的期間內保留資料，或按法律要求保留。</li>
+      <li><strong>計算資料：</strong>預設只儲存在你的裝置本機，用於保留輸入內容與結果；你可透過刪除 App 清除本機資料。</li>
+      <li><strong>訂閱資料：</strong>由 Apple 處理付款與交易；本 App 只在需要時向 Apple 取得訂閱狀態作驗證。</li>
+      <li><strong>客服通訊：</strong>如你主動聯絡我們，我們可能在合理期間內保留相關通訊記錄，以便跟進問題。</li>
     </ul>
 
     <h2>5. 你的權利與選擇</h2>
     <ul>
-      <li>你可於裝置設定中限制某些權限（如有）。</li>
-      <li>你可以要求查閱、更正或刪除你提供給我們的資料（如適用）。</li>
-      <li>如你希望刪除資料或查詢私隱事宜，可電郵我們：<a href="mailto:[[SupportEmail]]">[[SupportEmail]]</a></li>
+      <li>你可隨時停止使用本 App，或刪除本 App 以移除本機儲存的資料。</li>
+      <li>如你曾透過電郵向我們提供資料，你可要求查閱、更正或刪除該等資料（在法律與合理限制內）。</li>
+      <li>你可透過本 App 內的聯絡途徑或 App Store Connect 所列支援方式與我們聯絡。</li>
     </ul>
 
     <h2>6. 兒童私隱</h2>
     <p>
-      本 App 並非以兒童為主要對象。若你相信未成年人在未獲監護人同意下向我們提供資料，請聯絡我們。
+      本 App 並非以兒童為主要對象。我們不會刻意收集 13 歲以下兒童的個人資料。
+      若你相信未成年人在未獲監護人同意下向我們提供資料，請聯絡我們以便處理。
     </p>
 
     <h2>7. 安全措施</h2>
     <p>
-      我們會採取合理措施保護資料安全（例如存取控制、傳輸保護等）。但任何系統都無法保證 100% 安全。
+      我們會採取合理技術與管理措施保護資料安全；但任何系統都無法保證 100% 無風險。
     </p>
 
     <h2>8. 政策更新</h2>
@@ -130,15 +120,12 @@
 
     <h2>9. 聯絡我們</h2>
     <p>
-      如對本私隱政策有任何查詢：<br>
-      電郵：<a href="mailto:[[SupportEmail]]">[[SupportEmail]]</a><br>
-      開發者／公司：[[CompanyName/DeveloperName]]<br>
-      所在地：[[City, Country/Region]]（可選）
+      如對本私隱政策有任何查詢，請透過本 App 內的聯絡途徑或 App Store Connect 所列之支援聯絡方式與我們聯絡。
     </p>
   </main>
 
-  <footer style="padding: 18px 16px; border-top: 1px solid rgba(0,0,0,.08); opacity:.75; font-size: 13px;">
-    © [[YYYY]] [[CompanyName/DeveloperName]]. All rights reserved.
+  <footer>
+    © 2026 AlgoPro. All rights reserved.
   </footer>
 </body>
 </html>
